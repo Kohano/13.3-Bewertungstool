@@ -6,7 +6,9 @@ namespace BewertungstoolTests
     public class NoteTests
     {
         [TestMethod]
+        [DataRow(100, 0, 0.00, 6.00, "6", "ungenügend")]
         [DataRow(100, 20, 0.20, 6.00, "6", "ungenügend")]
+        [DataRow(100, 21, 0.26, 5.30, "5-", "mangelhaft")]
         [DataRow(100, 26, 0.26, 5.30, "5-", "mangelhaft")]
         //[DataRow(0.33   ,5.00    ,"5"  , "mangelhaft")]
         //[DataRow(0.39 ,	4.70 ,	"5+" ,	"mangelhaft")]
