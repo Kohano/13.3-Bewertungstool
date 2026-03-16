@@ -24,20 +24,20 @@ namespace Bewertungstool
             {
                 switch (Prozent)
                 {
-                    case <  0.22:    return 6;
+                    case <=  0.20:    return 6;
                     case <= 0.26:    return 5.3;
                     case <= 0.33:    return 5;
                     case <= 0.39:    return 4.7;
-                    case <= 0.49:    return 4.3;
-                    case <= 0.5:     return 4;
+                    case <= 0.44:    return 4.3;
+                    case <= 0.50:     return 4;
                     case <= 0.55:    return 3.7;
-                    case <= 0.6:     return 3.3;
+                    case <= 0.60:     return 3.3;
                     case <= 0.65:    return 3;
-                    case <= 0.7:     return 2.7;
+                    case <= 0.70:     return 2.7;
                     case <= 0.75:    return 2.3;
-                    case <= 0.8:     return 2;
+                    case <= 0.80:     return 2;
                     case <= 0.85:    return 1.7;
-                    case <= 0.9:     return 1.3;
+                    case <= 0.90:     return 1.3;
                     case <= 0.95:    return 1;
                     default:         return 0.7; 
                 }
